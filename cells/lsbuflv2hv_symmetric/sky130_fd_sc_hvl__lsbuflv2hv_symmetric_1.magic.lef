@@ -18,18 +18,13 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-SITE unithvdbl
-  SYMMETRY y ;
-  CLASS CORE ;
-  SIZE  11.04000 BY  8.140000 ;
-END unithvdbl
 MACRO sky130_fd_sc_hvl__lsbuflv2hv_symmetric_1
   CLASS CORE ;
   FOREIGN sky130_fd_sc_hvl__lsbuflv2hv_symmetric_1 ;
   ORIGIN  0.000000  0.000000 ;
   SIZE  11.04000 BY  8.140000 ;
-  SYMMETRY X Y ;
-  SITE unithvdbl ;
+  SYMMETRY X Y R90 ;
+  SITE unithv ;
   PIN A
     ANTENNAGATEAREA  0.252000 ;
     DIRECTION INPUT ;
